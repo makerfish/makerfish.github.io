@@ -8,8 +8,10 @@ h1 {
 
  @font-face {
     font-family: BluuNext-Bold;
-    src: url(fonts/BluuNext-Bold.otf) format("opentype");
-    }
+    src: url(fonts/BluuNext-Bold.woff2) format("woff2")
+    url(fonts/BluuNext-Bold.otf) format("opentype");
+    
+}
 .myDiv{
     font-family: BluuNext-Bold, sans-serif;
 }
