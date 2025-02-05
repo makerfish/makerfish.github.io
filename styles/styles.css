@@ -3,15 +3,10 @@ body {
 }
 h1 {
     color: #f3d8d8;
-    font-family: BluuNext-Bold, sans-serif;
+    font-family: Young Serif, serif;
 }
-
- @font-face {
-    font-family: BluuNext-Bold;
-    src: url(fonts/BluuNext-Bold.woff2) format("woff2")
-    url(fonts/BluuNext-Bold.otf) format("opentype");
-    
-}
-.myDiv{
-    font-family: BluuNext-Bold, sans-serif;
-}
+.young-serif-regular {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
