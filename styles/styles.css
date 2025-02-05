@@ -3,13 +3,13 @@ body {
 }
 h1 {
     color: #f3d8d8;
-    font-family: BluuNext-Bold;
+    font-family: BluuNext-Bold, sans-serif;
 }
 
  @font-face {
     font-family: BluuNext-Bold;
-    src: url(../fonts/BluuNext-Bold.otf);
+    src: url(fonts/BluuNext-Bold.otf) format("opentype");
     }
 .myDiv{
-    font-family: BluuNext-Bold;
+    font-family: BluuNext-Bold, sans-serif;
 }
