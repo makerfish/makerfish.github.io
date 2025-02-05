@@ -2,5 +2,14 @@ body {
     background-color: #252431;
 }
 h1 {
-    color: white;
+    color: #f3d8d8;
+    font-family: BluuNext-Bold;
+}
+
+ @font-face {
+    font-family: BluuNext-Bold;
+    src: url(../fonts/BluuNext-Bold.otf);
+    }
+.myDiv{
+    font-family: BluuNext-Bold;
 }
