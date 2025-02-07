@@ -10,13 +10,61 @@ h1 {
     font-weight: 400;
     font-style: normal;
   }
+  
+  .kranky-regular {
+    font-family: "Kranky", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
   .container {
-    padding: 20px;
+    padding: 5px;
     max-width: 700px;
     margin: 0 auto;
     text-align: center;
+    margin-top: 40px; /* Adjust the value as needed */
 }
 .site-logo img {
-    width: 700px; /* Set the width to 400px */
+    width: 600px; /* Set the width to 400px */
     height: auto; /* Maintain the aspect ratio */
+}
+
+/* General navbar styling */
+.navbar {
+    display: flex;
+    justify-content: center; /* Centers the links inside */
+    align-items: center; /* Vertically aligns items */
+    background-color: #252431; /* Dark background */
+    padding: 15px;
+    width: 700px; /* Set a fixed width */
+    height: 30px; /* Set a height */
+    border-radius: 15px;
+    margin: 0 auto; /* Centers the navbar itself */
+}
+
+/* Style for the nav list */
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 40px; /* Spacing between links */
+    text-align: center;
+}
+
+/* Style for each link */
+.navbar ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px 20px;
+    font-family: "Kranky", serif;
+    font-size: 32px;
+    transition: 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Hover effect */
+.navbar ul li a:hover {
+    background-color: #555;
+    color: whitesmoke;
+    border-radius: 5px; /* Rounded corners on hover */
 }
