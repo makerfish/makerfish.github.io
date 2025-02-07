@@ -36,6 +36,31 @@ h4 {
     text-align: center;
     margin-top: 40px; /* Adjust the value as needed */
 }
+
+.container2 {
+    padding: 5px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px; /* Adjust the value as needed */
+}
+
+button {
+    border: none;
+	background-color: rgb(22, 22, 22);
+	color: white;
+	width: 200px;
+	margin-top: 10px;
+	border-radius: 5px;
+    margin-bottom: 80px;
+    font-family: "Roboto Mono", serif;
+}
+
+button:hover{
+	background-color: #333333;
+}
+
+
 .site-logo img {
     width: 600px; /* Set the width to 400px */
     height: auto; /* Maintain the aspect ratio */
