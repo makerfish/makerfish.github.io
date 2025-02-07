@@ -63,8 +63,9 @@ h1 {
 }
 
 /* Hover effect */
-.navbar ul li a:hover {
+.navbar ul li a:hover,
+.navbar a.active {
     background-color: #555;
     color: whitesmoke;
-    border-radius: 5px; /* Rounded corners on hover */
+    border-radius: 5px; /* Rounded corners on hover and active */
 }
