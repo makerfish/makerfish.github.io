@@ -1,4 +1,4 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyBhtW46cH86Bl2gYkljmqnL0pQVjqwvd5ZJEvKm_amBMujaRlDSFUwB17arRsr1XYV/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycby5JssuiCflBx6jzvKpUWmyS8IgYrBGDLpf6E1U7ESJwGPFUyIhjCMiNGHVEzsFsi0R/exec'
 const form = document.forms['contact-form']
 const container2 = document.querySelector('.container2')
 
