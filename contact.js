@@ -8,7 +8,7 @@ form.addEventListener('submit', async e => {
 
   // Provide immediate feedback to the user
   container2.innerHTML = `
-    <h4>Submitting your form...</h4>
+    <h4>submitting your form...</h4>
   `
 
   try {
@@ -18,8 +18,8 @@ form.addEventListener('submit', async e => {
     }
     console.log('Success!', response) // Debugging log
     container2.innerHTML = `
-      <h4>Your form has been submitted!</h4>
-      <button id="submit-another">Submit another form</button>
+      <h4>your form has been submitted!</h4>
+      <button id="submit-another">submit another form</button>
     `
     document.getElementById('submit-another').addEventListener('click', () => {
       window.location.reload()
@@ -28,7 +28,7 @@ form.addEventListener('submit', async e => {
     console.error('Error!', error.message)
     container2.innerHTML = `
       <h4>There was an error submitting your form. Please try again.</h4>
-      <button id="submit-another">Try again</button>
+      <button id="submit-another"tTry again</button>
     `
     document.getElementById('submit-another').addEventListener('click', () => {
       window.location.reload()
