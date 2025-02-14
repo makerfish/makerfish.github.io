@@ -2,12 +2,21 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbx4d8tGfWLjZDfN7PgN1v
 const form = document.forms['contact-form'];
 const container2 = document.querySelector('.container2');
 
+// Ensure container2 exists
+if (!container2) {
+  console.error("Error: .container2 element not found in the DOM.");
+}
+
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
   console.log('Form submitted'); // Debugging log
 
   // Provide immediate feedback to the user
   container2.innerHTML = `<h4>Submitting your form...</h4>`;
+
+  setTimeout(() => {
+    container2.innerHTML = `<h4>Processing...</h4>`;
+  }, 500);
 
   try {
     const response = await fetch(scriptURL, { 
@@ -41,8 +50,15 @@ form.addEventListener('submit', async (e) => {
     `;
   }
 
-  // Add event listener for reloading the form
-  document.getElementById('submit-another').addEventListener('click', () => {
-    window.location.reload();
-  });
+  // Ensure the button exists before adding an event listener
+  setTimeout(() => {
+    const retryButton = document.getElementById('submit-another');
+    if (retryButton) {
+      retryButton.addEventListener('click', () => {
+        window.location.reload();
+      });
+    } else {
+      console.error("Error: Retry button not found.");
+    }
+  }, 500);
 });
