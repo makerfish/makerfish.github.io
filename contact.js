@@ -1,4 +1,4 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzLscUk1RXOivAaLD49TZFhxhb-sFln_FL_gdHU3Hc6Ek710gJiKm96kIs6oQzRVFkWww/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbx4d8tGfWLjZDfN7PgN1vjuEm8tzeogbyRas2lJXlcOAIphapFlY_PKYbN-UFfA-k3AeA/exec';
 const form = document.forms['contact-form'];
 const container2 = document.querySelector('.container2');
 
