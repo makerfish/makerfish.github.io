@@ -13,9 +13,10 @@ form.addEventListener('submit', (e) => {
   feedbackMessage.textContent = 'submitting...';
 
   fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
+    .then((response) => response.json())
+    .then((data) => {
+      if (data.status !== 'success') {
+        throw new Error(data.message || 'Network response was not ok');
       }
       feedbackMessage.textContent = 'thank you! your form has been submitted.';
       form.reset();
