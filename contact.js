@@ -51,14 +51,12 @@ form.addEventListener('submit', async (e) => {
   }
 
   // Ensure the button exists before adding an event listener
-  setTimeout(() => {
-    const retryButton = document.getElementById('submit-another');
-    if (retryButton) {
-      retryButton.addEventListener('click', () => {
-        window.location.reload();
-      });
-    } else {
-      console.error("Error: Retry button not found.");
-    }
-  }, 500);
+  const retryButton = document.getElementById('submit-another');
+  if (retryButton) {
+    retryButton.addEventListener('click', () => {
+      window.location.reload();
+    });
+  } else {
+    console.error("Error: Retry button not found.");
+  }
 });
