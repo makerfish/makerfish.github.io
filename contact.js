@@ -8,32 +8,26 @@ if (!container2) {
 }
 
 form.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  console.log('Form submitted'); // Debugging log
+  e.preventDefault(); // Prevent default form submission
+  console.log('Form submission started'); // Debugging log
 
   // Provide immediate feedback to the user
   container2.innerHTML = `<h4>Submitting your form...</h4>`;
 
-  setTimeout(() => {
-    container2.innerHTML = `<h4>Processing...</h4>`;
-  }, 500);
-
   try {
-    const response = await fetch(scriptURL, { 
-      method: 'POST', 
-      body: new FormData(form)
-    });
+    const formData = new FormData(form);
+    const response = await fetch(scriptURL, { method: 'POST', body: formData });
 
     if (!response.ok) throw new Error('Network response was not ok');
 
-    const result = await response.json(); // ✅ Wait for JSON response
+    const result = await response.json(); // Wait for the response JSON
 
     console.log('Success!', result); // Debugging log
 
-    // Check if the response contains success or error
+    // Show success message if submission is successful
     if (result.status === "success") {
       container2.innerHTML = `
-        <h4>Your form has been submitted!</h4>
+        <h4>Your form has been submitted successfully!</h4>
         <button id="submit-another">Submit Another Form</button>
       `;
     } else {
@@ -51,12 +45,14 @@ form.addEventListener('submit', async (e) => {
   }
 
   // Ensure the button exists before adding an event listener
-  const retryButton = document.getElementById('submit-another');
-  if (retryButton) {
-    retryButton.addEventListener('click', () => {
-      window.location.reload();
-    });
-  } else {
-    console.error("Error: Retry button not found.");
-  }
+  setTimeout(() => {
+    const retryButton = document.getElementById('submit-another');
+    if (retryButton) {
+      retryButton.addEventListener('click', () => {
+        window.location.reload();
+      });
+    } else {
+      console.error("Error: Retry button not found.");
+    }
+  }, 500);
 });
