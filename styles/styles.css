@@ -72,14 +72,15 @@ button:hover{
 .navbar {
     background-color: #252431;
     display: flex;
-    justify-content: center; /* Centers the links inside */
+    justify-content: space-between; /* Centers the links inside */
     align-items: center; /* Vertically aligns items */
     background-color: #252431; /* Dark background */
-    padding: 0px;
-    width: auto; /* Set a fixed width */
+    padding: 0 20px;
+    width: 100%; /* Set a fixed width */
     height: 120px; /* Set a height */
     border-radius: 0px;
-    margin: 0px; /* Centers the navbar itself */
+    margin: 0; 
+    box-sizing: border-box;
 }
 
 /* Style for the nav list */
