@@ -76,11 +76,11 @@ button:hover{
     justify-content: center; /* Centers the links inside */
     align-items: center; /* Vertically aligns items */
     background-color: #252431; /* Dark background */
-    padding: 15px;
+    padding: 0px;
     padding-top: 50px;
     width: auto; /* Set a fixed width */
-    height: 50px; /* Set a height */
-    border-radius: 15px;
+    height: 70px; /* Set a height */
+    border-radius: 0px;
     margin: 0 auto; /* Centers the navbar itself */
 }
 
