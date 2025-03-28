@@ -64,7 +64,7 @@ button:hover{
 .site-logo img {
     width: 320px; /* Set the width to 400px */
     height: auto; /* Maintain the aspect ratio */
-    padding: 30px;
+    padding: 50px;
     align-items: center;
 }
 
@@ -90,7 +90,7 @@ button:hover{
 /* Style for the nav list */
 .navbar ul {
     list-style: none;
-    padding: 20px;
+    padding: 50px;
     margin: 0;
     display: flex;
     gap: 20px; /* Spacing between links */
