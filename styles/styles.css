@@ -95,6 +95,7 @@ button:hover{
     display: flex;
     gap: 20px; /* Spacing between links */
     text-align: end;
+    padding-left: 20px;
 }
 
 /* Style for each link */
