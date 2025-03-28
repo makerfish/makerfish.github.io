@@ -83,7 +83,6 @@ button:hover{
     top: 0; /* Position from the top */
     left: 0; /* Position from the left */
     right: 0; /* Position from the right */
-    z-index: 1000; /* Set the z-index */
     box-sizing: border-box;
 }
 
