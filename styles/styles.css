@@ -79,7 +79,7 @@ button:hover{
     width: auto; /* Set a fixed width */
     height: 120px; /* Set a height */
     border-radius: 0px;
-    margin: 0 auto; /* Centers the navbar itself */
+    margin: 0px; /* Centers the navbar itself */
 }
 
 /* Style for the nav list */
