@@ -78,8 +78,12 @@ button:hover{
     padding: 0 20px;
     width: 100%; /* Set a fixed width */
     height: 120px; /* Set a height */
-    border-radius: 0px;
     margin: 0; 
+    position: fixed; /* Fixed position */
+    top: 0; /* Position from the top */
+    left: 0; /* Position from the left */
+    right: 0; /* Position from the right */
+    z-index: 1000; /* Set the z-index */
     box-sizing: border-box;
 }
 
