@@ -70,7 +70,7 @@ button:hover{
 
 /* General navbar styling */
 .navbar {
-    background-image: url('images/stars.jpg');
+    background-color: #52405e;
     display: flex;
     justify-content: space-between; /* Centers the links inside */
     align-items: center; /* Vertically aligns items */
