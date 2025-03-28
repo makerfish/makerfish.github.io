@@ -1,5 +1,5 @@
 body {
-    background-color: #252431;
+    background-color: #c9c9d0;
 }
 h1 {
     color: #f3d8d8;
@@ -71,6 +71,7 @@ button:hover{
 
 /* General navbar styling */
 .navbar {
+    background-color: #252431;
     display: flex;
     justify-content: center; /* Centers the links inside */
     align-items: center; /* Vertically aligns items */
