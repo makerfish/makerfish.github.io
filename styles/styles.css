@@ -106,7 +106,7 @@ button:hover{
 /* Hover effect */
 .navbar ul li a:hover,
 .navbar a.active {
-    color: #555;
+    color: #a0a0a0;
 }
 
 h4{
