@@ -77,7 +77,7 @@ button:hover{
     background-color: #252431; /* Dark background */
     padding: 0 20px;
     width: 100%; /* Set a fixed width */
-    height: 100px; /* Set a height */
+    height: 120px; /* Set a height */
     border-radius: 0px;
     margin: 0; 
     box-sizing: border-box;
