@@ -74,7 +74,6 @@ button:hover{
     display: flex;
     justify-content: space-between; /* Centers the links inside */
     align-items: center; /* Vertically aligns items */
-    background-color: #252431; /* Dark background */
     padding: 0 20px;
     width: 100%; /* Set a fixed width */
     height: 120px; /* Set a height */
