@@ -70,7 +70,7 @@ button:hover{
 
 /* General navbar styling */
 .navbar {
-    background-color: #39194e;
+    background-color: #31233a;
     display: flex;
     justify-content: space-between; /* Centers the links inside */
     align-items: center; /* Vertically aligns items */
