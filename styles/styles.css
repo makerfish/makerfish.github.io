@@ -70,7 +70,7 @@ button:hover{
 
 /* General navbar styling */
 .navbar {
-    background-color: #31233a;
+    background-color: #fffdf1;
     display: flex;
     justify-content: space-between; /* Centers the links inside */
     align-items: center; /* Vertically aligns items */
@@ -98,7 +98,7 @@ button:hover{
 /* Style for each link */
 .navbar ul li a {
     text-decoration: none;
-    color: whitesmoke;
+    color: #31233a;
     padding: 10px 20px;
     font-family: "Kranky", serif;
     font-size: 24px;
